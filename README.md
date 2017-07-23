@@ -1,19 +1,15 @@
 # Proplist
 
-**TODO: Add description**
+A lightweight wrapper around Erlang's `:proplists` module.
+
+This lib makes the proplist the first argument for all functions.
+Additionally, when functions would return `:none` or `:undefined`, they instead
+return `nil`
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `proplist` to your list of dependencies in `mix.exs`:
-
 ```elixir
 def deps do
-  [{:proplist, "~> 0.1.0"}]
+  [{:proplist, git: "git@github.com:cjpoll/proplist", ref: "master"}]
 end
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/proplist](https://hexdocs.pm/proplist).
-
